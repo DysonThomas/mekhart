@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mekhart - Art Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Floating Background Shapes -->
+    <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <nav>
+        <div class="container">
+            <div class="logo">MEKHART</div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <img src="Assets/navLogooo.png" alt="Mekhart Logo" class="logo-image">
+            <h1>MEKHART</h1>
+            <p class="hero-subtitle">BY</p>
+            <p class="hero-artist">MEKHA</p>
+            <p class="hero-tagline">CONTEMPORARY ART & CREATIVE EXPRESSION</p>
+            <a href="#gallery" class="cta-button">EXPLORE GALLERY</a>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>GALLERY</h2>
+
+        <!-- Category Filter -->
+        <div class="category-filter">
+            <button class="category-btn active" data-category="all">ALL</button>
+            <button class="category-btn" data-category="portraits">PORTRAITS</button>
+            <button class="category-btn" data-category="home-decor">HOME DECOR</button>
+            <!-- <button class="category-btn" data-category="lupin-art">LIPPAN ART</button> -->
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+            <!-- Portraits -->
+            <div class="art-card" data-category="portraits">
+                <div class="art-placeholder">
+                    <img src="Assets/Arts/2.jpg" alt="Portrait 1" style="width:100%; height:100%; object-fit: cover;">
+                </div>
+                <div class="art-info">
+
+                    <h3>Portraits</h3>
+                </div>
+            </div>
+            <div class="art-card" data-category="portraits">
+                <div class="art-placeholder">
+                    <img src="Assets/Arts/1.png" alt="Portrait 1"
+                        style="width:100%; padding-top: 5px; height:100%; object-fit: cover;">
+                </div>
+                <div class="art-info">
+
+                    <h3>Portraits</h3>
+                </div>
+            </div>
+            <div class="art-card" data-category="portraits">
+                <div class="art-placeholder">
+                    <img src="Assets/Arts/3.jpg" alt="Portrait 1" style="width:100%; height:100%; object-fit: cover;">
+                </div>
+                <div class="art-info">
+
+                    <h3>Portraits</h3>
+                </div>
+            </div>
+            <div class="art-card" data-category="portraits">
+                <div class="art-placeholder">
+                    <img src="Assets/Arts/4.jpg" alt="Portrait 1" style="width:100%; height:100%; object-fit: cover;">
+                    <div class="art-info">
+                        <h3>Portraits</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Home Decor -->
+            <div class="art-card" data-category="home-decor">
+                <div class="art-placeholder">
+                    <img src="Assets/Arts/5.jpg" alt="Portrait 1" style="width:100%; height:100%; object-fit: cover;">
+                </div>
+                <div class="art-info">
+                    <h3>Coasters</h3>
+                    <span>Home Decor</span>
+                </div>
+            </div>
+            <div class="art-card" data-category="home-decor">
+                <div class="art-placeholder"><img src="Assets/Arts/6.jpg" alt="Portrait 1"
+                        style="width:100%; height:100%; object-fit: cover;"></div>
+                <div class="art-info">
+                    <h3>Coasters</h3>
+                    <span>Home Decor</span>
+                </div>
+            </div>
+            <!-- <div class="art-card" data-category="home-decor">
+                <div class="art-placeholder">HOME DECOR 3</div>
+                <div class="art-info">
+                    <h3>Geometric Design</h3>
+                    <span>Home Decor</span>
+                </div>
+            </div> -->
+
+            <!-- Lupin Art -->
+            <!-- <div class="art-card" data-category="lupin-art">
+                <div class="art-placeholder">LUPIN 1</div>
+                <div class="art-info">
+                    <h3>Lupin Illustration</h3>
+                    <span>Lupin Art</span>
+                </div>
+            </div>
+            <div class="art-card" data-category="lupin-art">
+                <div class="art-placeholder">LUPIN 2</div>
+                <div class="art-info">
+                    <h3>Lupin Collection</h3>
+                    <span>Lupin Art</span>
+                </div>
+            </div>
+            <div class="art-card" data-category="lupin-art">
+                <div class="art-placeholder">LUPIN 3</div>
+                <div class="art-info">
+                    <h3>Lupin Series</h3>
+                    <span>Lupin Art</span>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <div class="parallax-section">
+        <div class="parallax-bg"></div>
+        <div class="parallax-content">
+            <h3>ART IS EMOTION</h3>
+            <p>Every piece tells a story</p>
+        </div>
+    </div>
+
+    <section id="reviews" style="padding: 6rem 5%;">
+        <h2>TESTIMONIALS</h2>
+        <div class="reviews-carousel">
+            <button class="carousel-btn prev" id="prevBtn">‹</button>
+            <div class="carousel-container">
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"Absolutely stunning artwork! The attention to detail and emotion in each
+                            piece is incredible. Mekhart has a unique vision that truly stands out."</p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">F</div>
+                            <div class="reviewer-info">
+                                <h4>Feba</h4>
+                                <span>Nurse</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"I commissioned a custom piece and couldn't be happier. The creative
+                            process was collaborative and the final result exceeded all expectations!"</p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">J</div>
+                            <div class="reviewer-info">
+                                <h4>Jobin</h4>
+                                <span>Accountant</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"The use of color and form is masterful. Every piece tells a story and
+                            brings life to any space. Highly recommend to anyone looking for original art."</p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">A</div>
+                            <div class="reviewer-info">
+                                <h4>Abigail</h4>
+                                <span>Nurse</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"Professional, talented, and a pleasure to work with. The artwork I
+                            purchased has become the centerpiece of my living room. True artistry!"</p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">M</div>
+                            <div class="reviewer-info">
+                                <h4>Meekha</h4>
+                                <span>Student</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"Mekhart's work is fresh, innovative, and emotionally resonant. Each
+                            piece is a conversation starter and a beautiful addition to our gallery."</p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">R</div>
+                            <div class="reviewer-info">
+                                <h4>Reno</h4>
+                                <span>Accountant</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn next" id="nextBtn">›</button>
+        </div>
+        <div class="carousel-dots" id="carouselDots"></div>
+    </section>
+
+    <section id="about">
+        <h2>ABOUT THE ARTIST</h2>
+        <div class="about-content">
+            <p>
+                Mekha is a contemporary artist exploring the intersection of color, form, and emotion.
+                Each piece is a journey into creative expression, blending traditional techniques with modern aesthetics
+                to create unique visual experiences that resonate with the soul.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>GET IN TOUCH</h2>
+        <div class="contact-content">
+            <p style="color: #b0b0b0; font-size: 1.1rem; margin-bottom: 1rem;">
+                Interested in commissioning artwork or collaborating?<br>Let's create something beautiful together.
+            </p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/mekhart._/" target="_blank" title="Instagram">📷</a>
+                <a href="mailto:mekhabiju313@gmail.com" title="Email">✉️</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 TechieTonic. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+</body>
+
+</html>
